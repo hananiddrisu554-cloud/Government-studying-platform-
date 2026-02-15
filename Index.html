@@ -1,0 +1,127 @@
+here<!DOCTYPE html>
+<html lang=”en”>
+   <head>
+    <meta charset=”UTF-8”>
+    <title>Ghana Government Studies Portal</title>
+    <meta name=”viewport” content=”width=device-width, initial-scale=1.0”>
+    <link rel=”stylesheet” href=”css/style.css”>
+</head>
+
+<body>
+
+<header>
+    <h1>🇬🇭 Ghana Government Studies Portal</h1>
+    <p>Learn, Revise, and Test Your Knowledge</p>
+</header>
+
+<nav>
+    <a href=”#meaning”>Meaning of Government</a>
+    <a href=”#arms”>Arms of Government</a>
+    <a href=”#constitution”>1992 Constitution</a>
+    <a href=”#quiz”>Quiz</a>
+</nav>
+
+<section id=”meaning”>
+    <h2>Meaning of Government</h2>
+    <p>
+        Government is the system or group of people that rule a country and make laws.
+        In Ghana, the government operates under a democratic system.
+    </p>
+</section>
+
+<section id=”arms”>
+    <h2>The Three Arms of Government in Ghana</h2>
+    <ul>
+        <li><strong>Executive:</strong> Headed by the President. Implements laws.</li>
+        <li><strong>Legislature:</strong> Parliament. Makes laws.</li>
+        <li><strong>Judiciary:</strong> Judges and courts. Interprets laws.</li>
+    </ul>
+</section>
+
+<section id=”constitution”>
+    <h2>The 1992 Constitution of Ghana</h2>
+    <p>
+        The 1992 Constitution is the supreme law of Ghana.
+        It establishes the structure of government and protects fundamental human rights.
+    </p>
+</section>
+
+<section id=”quiz”>
+    <h2>Quick Quiz</h2>
+    <p>Who makes laws in Ghana?</p>
+    <button onclick=”checkAnswer(’a’)”>A. The President</button>
+    <button onclick=”checkAnswer(’b’)”>B. Parliament</button>
+    <button onclick=”checkAnswer(’c’)”>C. The Police</button>
+    <p id=”result”></p>
+</section>
+
+<footer>
+    <p>© 2026 Ghana Government Studies Portal</p>
+</footer>
+
+<script src=”js/script.js”></script>
+
+</body>
+</html>body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #006b3f;
+    color: white;
+    text-align: center;
+    padding: 30px;
+}
+
+nav {
+    background-color: #fcd116;
+    padding: 15px;
+    text-align: center;
+}
+
+nav a {
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+}
+
+section {
+    padding: 30px;
+    margin: 20px;
+    background: white;
+    border-radius: 10px;
+}
+
+button {
+    padding: 10px 15px;
+    margin: 5px;
+    border: none;
+    border-radius: 5px;
+    background-color: #ce1126;
+    color: white;
+    cursor: pointer;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+footer {
+    text-align: center;
+    background-color: #006b3f;
+    color: white;
+    padding: 15px;
+}function checkAnswer(answer) {
+    const result = document.getElementById(”result”);
+
+    if (answer === “b”) {
+        result.textContent = “Correct! Parliament makes laws in Ghana.”;
+        result.style.color = “green”;
+    } else {
+        result.textContent = “Incorrect. Try again!”;
+        result.style.color = “red”;
+    }
+}
